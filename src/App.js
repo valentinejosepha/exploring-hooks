@@ -5,7 +5,9 @@ function App() {
   const SNIPPETS = [
     'Bears, beets, battlestar galactica',
     "What's Forrest Gump's password? 1Forrest1",
-    'Where do programmers like to hangout? The Foo Bar'
+    'Where do programmers like to hangout? The Foo Bar',
+    'My game is the best, do you agree?',
+    'You are a boss if you kill my record !'
   ];
   const INITIAL_GAME_STATE = {victory: false, startTime: null, endTime: null};
   const [snippet, setSnippet] = useState('');
@@ -44,7 +46,7 @@ function App() {
       <hr />
       {
         SNIPPETS.map((SNIPPET, index) => (
-          <button onClick={chooseSnippet(index)} key={index}>
+          <button className='snippet' onClick={chooseSnippet(index)} key={index}>
             {SNIPPET.substring(0, 10)}...
           </button>
         ))

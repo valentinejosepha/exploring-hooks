@@ -20,3 +20,27 @@
 .App-link {
   color: #09d3ac;
 }
+
+.title {
+  text-align: center;
+}
+
+.victory {
+  text-align: center;
+}
+
+.typeBar {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.snippet {
+  align-items: center;
+  width: 15%;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
