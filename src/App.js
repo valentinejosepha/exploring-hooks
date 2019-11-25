@@ -35,12 +35,12 @@ function App() {
 
   return (
     <div>
-      <h2>Type Race</h2>
+      <h2 className='title'>Type Race</h2>
       <hr />
-      <h3>Snippet</h3>
+      <h3 className='title'>Snippet</h3>
       {snippet}
-      <h4>{gameState.victory ? `Done! 🎉 Time: ${gameState.endTime}ms` : null}</h4>
-      <input value={userText} onChange={updateUserText} />
+      <h4 className='victory'>{gameState.victory ? `Done! 🎉 Time: ${gameState.endTime}ms` : null}</h4>
+      <input className='typeBar' value={userText} onChange={updateUserText} />
       <hr />
       {
         SNIPPETS.map((SNIPPET, index) => (
